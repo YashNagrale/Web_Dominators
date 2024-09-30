@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>GetSkills</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="img" data-aos="zoom-in" data-aos-duration="1400">
+      <div class="logo">
+        <img style="mix-blend-mode: multiply; width: 2rem;" src="./assets/logo.png" alt="">
+      </div>
+
+      <nav data-aos="zoom-in" data-aos-duration="1400">
+        <ul>
+          <li>
+            <a href="#courses" class="btn"
+              >Courses <i class="fa-solid fa-book"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#about" class="btn"
+              >About <i class="ri-list-settings-line"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#contact" class="btn"
+              >Contact <i class="fa-solid fa-phone"></i
+            ></a>
+          </li>
+          <div id="header-btn">
+            <button
+              class="nav-btn"
+              id="log"
+              data-aos="zoom-in"
+              data-aos-duration="1400"
+            >
+              Log in <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <button
+              class="nav-btn"
+              id="log"
+              data-aos="zoom-in"
+              data-aos-duration="1400"
+            >
+              Sign Up <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1
+          id="element"
+          style="padding-bottom: 0.5rem; background-color: transparent"
+        ></h1>
+
+        <div>
+          <p
+            style="background-color: transparent"
+            id="new-text"
+            data-aos="fade-right"
+            data-aos-duration="1400"
+            data-aos-delay="300"
+          >
+            Learn the latest technologies with interactive, hands-on courses.
+            Connect...create...& develop—it's free!
+          </p>
+        </div>
+        <!-- <p>Your gateway to learning new skills.</p> -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 1rem 0;
+            gap: 1.7rem;
+          "
+        >
+          <img
+            style="width: 6rem"
+            src="./assets/app-icon-removebg-preview.png"
+            alt=""
+            data-aos="zoom-in"
+            data-aos-duration="1400"
+          />
+          <img
+            style="width: 5rem"
+            src="assets/generate-ai-button-ai-stars-icon-artificial-intelligence-logo-llm-artificial-intelligence-icon-machine-learning-generator-d-325646796-Photoroom.png"
+            alt=""
+            data-aos="zoom-in"
+            data-aos-duration="1400"
+          />
+          <img
+            style="width: 4rem; margin-left: 15px"
+            src="assets/Android_logo_2019_(stacked).svg.png"
+            alt=""
+            data-aos="zoom-in"
+            data-aos-duration="1400"
+          />
+          <img
+            style="width: 5rem; margin-left: 15px; mix-blend-mode:multiply;
+"
+            src="assets/istockphoto-1311652639-612x612.jpg"
+            alt=""
+            data-aos="zoom-in"
+            data-aos-duration="1400"
+          />
+        </div>
+      </div>
+      <div id="img" data-aos="zoom-in" data-aos-duration="1400">
+        <img
+          src="./assets/homeImg.svg"
+          alt=""
+          data-aos="zoom-in"
+          data-aos-duration="1400"
+        />
+              <!-- ICONS DiV -->
+        <div class="contact">
+          <a 
+            href="#"
+            data-aos="fade-right"
+            data-aos-duration="1400"
+            data-aos-delay="300"
+            ><i id="fb" class="ri-facebook-fill"></i
+          ></a>
+          <a  href="#"             data-aos="fade-right"
+          data-aos-duration="1400"
+          data-aos-delay="300"><i id="yt" class="ri-youtube-fill"></i></a>
+          <a  href="#"             data-aos="fade-right"
+          data-aos-duration="1400"
+          data-aos-delay="300"><i id="x" class="fa-brands fa-square-x-twitter"></i>
+      </div>
+
+
+    </section>
+
+    <section id="courses" class="courses">
+      <!-- <h2>Available Courses</h2> -->
+      <div class="course-container">
+        <div class="course-item">
+          <div
+            class="course-box"
+            onMouseMove="handleMouseMove(event)"
+            onMouseLeave="handleMouseLeave(event)"
+          >
+            <button
+              class="course-button"
+              onclick="showAlert('Web Development')"
+              class="main-hero"
+              data-aos="flip-down"
+              data-aos-duration="1400"
+              data-aos-delay="400"
+            >
+              <div>Web Development <i class="fa-brands fa-html5"></i></div>
+            </button>
+            <p data-aos="zoom-in" data-aos-duration="1400">
+              Learn the basics of web development with HTML, CSS, and
+              JavaScript.
+            </p>
+          </div>
+        </div>
+        <div class="course-item">
+          <div
+            class="course-box"
+            onMouseMove="handleMouseMove(event)"
+            onMouseLeave="handleMouseLeave(event)"
+          >
+            <div class="course-content">
+              <button
+                class="course-button"
+                onclick="showAlert('Data Science')"
+                class="main-hero"
+                data-aos="flip-down"
+                data-aos-duration="1400"
+                data-aos-delay="400"
+              >
+                Data Science <i class="ri-brain-2-fill"></i>
+              </button>
+
+              <!-- div> -->
+              <p data-aos="zoom-in" data-aos-duration="1400">
+                Discover data analysis, visualization, and machine learning.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div
+            class="course-box"
+            onMouseMove="handleMouseMove(event)"
+            onMouseLeave="handleMouseLeave(event)"
+          >
+            <button
+              class="course-button"
+              onclick="showAlert('Graphic Design')"
+              class="main-hero"
+              data-aos="flip-down"
+              data-aos-duration="1400"
+              data-aos-delay="400"
+            >
+              Graphic Design <i class="fa-regular fa-lightbulb"></i>
+            </button>
+            <p data-aos="zoom-in" data-aos-duration="1400">
+              Enhance your design skills with Adobe Photoshop and Illustrator.
+            </p>
+          </div>
+        </div>
+        <div class="course-item">
+          <div
+            class="course-box"
+            onMouseMove="handleMouseMove(event)"
+            onMouseLeave="handleMouseLeave(event)"
+          >
+            <button
+              class="course-button"
+              onclick="showAlert('Digital Marketing')"
+              class="main-hero"
+              data-aos="flip-down"
+              data-aos-duration="1400"
+              data-aos-delay="400"
+            >
+              Digital Marketing <i class="fa-solid fa-chart-simple"></i>
+            </button>
+            <p data-aos="zoom-in" data-aos-duration="1400">
+              Master SEO, social media marketing, and content strategy.
+            </p>
+          </div>
+        </div>
+        <div class="course-item">
+          <div
+            class="course-box"
+            onMouseMove="handleMouseMove(event)"
+            onMouseLeave="handleMouseLeave(event)"
+          >
+            <button
+              class="course-button"
+              onclick="showAlert('Machine Learning')"
+              class="main-hero"
+              data-aos="flip-down"
+              data-aos-duration="1400"
+              data-aos-delay="400"
+            >
+              Machine Learning <i class="fa-solid fa-robot"></i>
+            </button>
+            <p data-aos="zoom-in" data-aos-duration="1400">
+              Dive into algorithms, data modeling, and predictive analytics.
+            </p>
+          </div>
+        </div>
+        <div class="course-item">
+          <div
+            class="course-box"
+            onMouseMove="handleMouseMove(event)"
+            onMouseLeave="handleMouseLeave(event)"
+          >
+            <button
+              class="course-button"
+              onclick="showAlert('Photography')"
+              class="main-hero"
+              data-aos="flip-down"
+              data-aos-duration="1400"
+              data-aos-delay="400"
+            >
+              Photography <i class="fa-solid fa-camera"></i>
+            </button>
+            <p data-aos="zoom-in" data-aos-duration="1400">
+              Learn techniques for capturing stunning images and editing.
+            </p>
+          </div>
+        </div>
+        <div class="course-item">
+          <div
+            class="course-box"
+            onMouseMove="handleMouseMove(event)"
+            onMouseLeave="handleMouseLeave(event)"
+          >
+            <button
+              class="course-button"
+              onclick="showAlert('Mobile App Development')"
+              class="main-hero"
+              data-aos="flip-down"
+              data-aos-duration="1400"
+              data-aos-delay="400"
+            >
+              Mobile App Development <i class="fa-solid fa-mobile"></i>
+            </button>
+            <p data-aos="zoom-in" data-aos-duration="1400">
+              Create apps for Android and iOS using modern frameworks.
+            </p>
+          </div>
+        </div>
+        <div class="course-item">
+          <div
+            class="course-box"
+            onMouseMove="handleMouseMove(event)"
+            onMouseLeave="handleMouseLeave(event)"
+          >
+            <button
+              class="course-button"
+              onclick="showAlert('Cybersecurity')"
+              class="main-hero"
+              data-aos="flip-down"
+              data-aos-duration="1400"
+              data-aos-delay="400"
+            >
+              Cybersecurity <i class="fa-solid fa-lock"></i>
+            </button>
+            <p data-aos="zoom-in" data-aos-duration="1400">
+              Understand the principles of securing networks and systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr color="blue" />
+
+    <section id="about" class="about">
+      <h2 style="text-align: start">About Us</h2>
+      <p
+        data-aos="fade-right"
+        data-aos-duration="1400"
+        data-aos-delay="300"
+        style="text-align: start; margin-top: 5px"
+      >
+        This webpage is made by Team Web Dominators.
+      </p>
+    </section>
+
+    <section id="contact" class="about">
+      <h2 style="text-align: start; color: black; margin-bottom: 10px;">Contact Us</h2>
+      <p style="text-align: start; margin-top: 10px">
+        <a target="_blank" href="https://x.com/DeveloperYashN" style="color: black; display: flex; gap:.6rem;">
+          <i style="font-size: 1.3rem;" class="fa-brands fa-square-x-twitter" style="font-size: .8rem;"></i>
+          Yash Nagrale
+        </a>
+      </p>
+      <p style="text-align: start; margin-top: 10px">
+        <a target="_blank" href="https://x.com/Roshesh_DevX" style="color: black; display: flex; gap:.6rem;">
+            <i style="font-size: 1.3rem;" class="fa-brands fa-square-x-twitter" style="font-size: .8rem;"></i>
+            Roshesh Chaware
+        </a>
+      </p>
+    </section>
+    <hr color="blue" />
+
+    <footer>
+      <div class="footer-two">
+        <ul class="list">
+          <li class="item imp"><a href="#">Get to Know Us</a></li>
+          <li class="item"><a href="#">Careers</a></li>
+          <li class="item"><a href="#">Blog</a></li>
+          <li class="item"><a href="#">About</a></li>
+          <li class="item"><a href="#">Investor</a></li>
+          <li class="item"><a href="#">Technologies</a></li>
+          <li class="item"><a href="#"> Science</a></li>
+        </ul>
+
+        <ul class="list">
+          <li class="item imp"><a href="#"> Make Money with Us</a></li>
+          <li class="item"><a href="#"> Sell products</a></li>
+          <li class="item"><a href="#"> Sell Business</a></li>
+          <li class="item"><a href="#"> Sell apps on</a></li>
+          <li class="item"><a href="#"> Become an Affiliate</a></li>
+          <li class="item"><a href="#"> Advertise Your Products</a></li>
+          <li class="item"><a href="#"> Self-Publish with Us</a></li>
+        </ul>
+
+        <ul class="list">
+          <li class="item imp"><a href="#">Investor Relations</a></li>
+          <li class="item"><a href="#"> Self-Publish with Us</a></li>
+          <li class="item"><a href="#">Become an Affiliate</a></li>
+          <li class="item"><a href="#">Applications</a></li>
+          <li class="item"><a href="#">Sell apps</a></li>
+          <li class="item"><a href="#">Devices</a></li>
+          <li class="item"><a href="#"> Sell products on Link</a></li>
+        </ul>
+
+        <ul class="list">
+          <li class="item imp"><a href="#">Get to Know Us</a></li>
+          <li class="item"><a href="#">Careers</a></li>
+          <li class="item"><a href="#">Learn</a></li>
+          <li class="item"><a href="#">About Study</a></li>
+          <li class="item"><a href="#">New studies</a></li>
+          <li class="item"><a href="#">Machines</a></li>
+          <li class="item"><a href="#"> Artificial </a></li>
+        </ul>
+      </div>
+
+      <div class="foot-end">
+        <div class="page">
+          <a href="#">Conditions of Use</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#">Your Ads Privacy Choices</a>
+        </div>
+        <div class="copy" style="padding: 0">
+          © 1996-2024, getSkills.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
+  </body>
+</html>
